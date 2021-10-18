@@ -1,0 +1,27 @@
+<launch>
+  <arg name="input/pointcloud" default="/sensing/lidar/no_ground/pointcloud"/>
+  <arg name="input/map" default="/map/pointcloud_map" />
+  <arg name="output/clusters" default="clusters"/>
+  <arg name="use_pointcloud_map" default="false"/>
+
+  <node name="euclidean_cluster_ver_pedestrian_extract_project_node" pkg="euclidean_cluster_ver_pedestrian_extract_project" type="euclidean_cluster_ver_pedestrian_extract_project_node" output="screen">
+    <remap from="~input" to="$(arg input/pointcloud)" />
+    <!-- <remap from="~output" to="voxel_grid_filtered/pointcloud" /> -->
+    <!-- <remap from="~debug/clusters" to="debug/clusters" /> -->
+    <rosparam>
+      target_frame: base_link
+      use_height: false
+      tolerance: 0.1
+      min_cluster_size: 10
+      max_cluster_size: 1000
+      min_height: 0.3
+      max_height: 2.0
+      limit_height: 0.3
+      limit_width: 1.2
+      limit_length: 1.2
+      front_lidar_height: 1.0
+      max_detection_distance: 5.0
+    </rosparam>
+  </node>
+  
+</launch>
