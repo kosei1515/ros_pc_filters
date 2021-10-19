@@ -13,6 +13,10 @@ ROS×PCLのフィルターをかき集めました
 
 4. downsampling filter
   シンプルに取得する点群を減らすフィルター　この場合はセンサーから近い方が密になり遠い方が粗になる
-8. median fiter
+  
+5. median fiter
   メディアンフィルター
-10. その他追加予定
+  
+6. kd tree filter
+  近傍点探索を行うノード
+8. その他追加予定
