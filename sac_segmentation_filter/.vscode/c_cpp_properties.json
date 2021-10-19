@@ -1,0 +1,55 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/kosei/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/change_coordinates_from_pico_to_robot/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/change_coordinates_from_zed_to_robot/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/test/change_coordinates_from_zed_to_robot_test/include/**",
+        "/home/kosei/catkin_ws/src/change_point_coordinates/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/command_process/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/command_process_ver2/include/**",
+        "/home/kosei/catkin_ws/src/fix_voxel_grid_index/include/**",
+        "/home/kosei/catkin_ws/src/hexa_serial/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/kd_tree/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/leg_planning/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/test/leg_planning_test/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/low_pass_filter/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/main/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/median_filter/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/merge_pc/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/pc_change_coordinates/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/test/pc_change_coordinates_test/include/**",
+        "/home/kosei/catkin_ws/src/pico_r_leg_planning/include/**",
+        "/home/kosei/catkin_ws/src/pico_voxel_r_leg_planning/include/**",
+        "/home/kosei/catkin_ws/src/r_leg_planning/include/**",
+        "/home/kosei/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/kosei/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/home/kosei/catkin_ws/src/sac_segmentation_filter/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/serial/include/**",
+        "/home/kosei/catkin_ws/src/serial_communication/include/**",
+        "/home/kosei/catkin_ws/src/serial_connection/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/set_direction_node/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/set_height/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/set_movement_type/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/set_pc_for_planning/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/set_posture/include/**",
+        "/home/kosei/catkin_ws/src/vg_make_and_judge/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/vis_tf/include/**",
+        "/home/kosei/catkin_ws/src/6-leg_Semi-autonomous_ws/test/vis_tf_test/include/**",
+        "/home/kosei/catkin_ws/src/voxel_grid/include/**",
+        "/home/kosei/catkin_ws/src/voxel_grid2/include/**",
+        "/home/kosei/catkin_ws/src/voxel_grid_filter/include/**",
+        "/home/kosei/catkin_ws/src/zed-ros-wrapper/zed_interfaces/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
