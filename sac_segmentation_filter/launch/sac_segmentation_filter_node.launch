@@ -1,0 +1,14 @@
+<launch>
+    <arg name="node_name" default="sac_segmentation_filter_node"/>
+    <arg name="input" default="your point cloud input"/>
+    <arg name="output" default="your output topic name"/>
+    
+    <node name="sac_segmentation_filter_node" pkg="sac_segmentation_filter" type="sac_segmentation_node">
+        <remap from="~input" to="$(arg input)"/>
+        <remap from="~output" to="$(arg output)"/>
+        <rosparam>
+            distance_threshould: 1
+            is_get_plane: true
+        </rosparam>
+    </node>
+</launch>
