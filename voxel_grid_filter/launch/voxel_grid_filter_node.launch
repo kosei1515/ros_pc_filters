@@ -1,0 +1,15 @@
+<launch>
+    <arg name="node_name" default="voxel_grid_filter_node"/>
+    <arg name="input" default="your point cloud input"/>
+    <arg name="output" default="your output topic name"/>
+    
+    <node name="voxel_grid_filter_node" pkg="voxel_grid_filter" type="voxel_grid_filter_node">
+        <remap from="~input" to="$(arg input)"/>
+        <remap from="~output" to="$(arg output)"/>
+        <rosparam>
+            leaf_size_x: 0.1
+            leaf_size_y: 0.1
+            leaf_size_z: 0.1
+        </rosparam>
+    </node>
+</launch>
