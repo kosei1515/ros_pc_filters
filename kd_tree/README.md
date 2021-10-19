@@ -1,7 +1,7 @@
 # kd_tree
 # kd_tree_node
 デプスセンサから取得したポイントクラウドを用いて
-接地点計画用の新たなグリッドマップを作成するノード
+ロボットの計画用の新たなグリッドマップを作成するノード
 
 ## parameter(#define)
 node_count: 格子点周囲を探索する際のPointCloudの探索数　default 8
@@ -9,7 +9,7 @@ node_count: 格子点周囲を探索する際のPointCloudの探索数　default
 voxel_size: 格子点からみた探索する範囲の半径　deault 0.03[m]
 
 ## subscribe
-1.　set_pc_for_planningで作成されたxy平面上の格子点
+1.　xy平面上の格子点
 
 2.　デプスセンサから取得したPointCloud（ただし様々なフィルター（メディアン・ローパスなど）処理をしたあとのものが望ましい）
 
