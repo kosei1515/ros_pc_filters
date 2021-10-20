@@ -19,4 +19,10 @@ ROS×PCLのフィルターをかき集めました
   
 6. kd tree filter
   近傍点探索を行うノード
-8. その他追加予定
+  
+7. sac segmentation filter
+  いろんな点集合を抽出or除外できるフィルタ
+  - plane filter 平面の抽出or削除
+  - sphere filter 球体の抽出or削除
+  - cylinder filter 円柱の抽出or削除
+9. その他追加予定
