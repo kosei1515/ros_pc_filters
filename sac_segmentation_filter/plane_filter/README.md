@@ -8,3 +8,8 @@
  dictance_threshould  ユークリッド距離の最大値      default 1;
  is_get_plane   平面を抽出するか除去するかを指定できる　抽出の場合true      default true
  ```
+
+## code
+```
+roslaunch plane_filter plane_filter_node.launch
+```
