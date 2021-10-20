@@ -1,4 +1,4 @@
-# SAC Segmentation Filter
+# Plane Filter
 
  平面を検出するフィルター
 
