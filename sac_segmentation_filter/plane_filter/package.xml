@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>sac_segmentation_filter</name>
+  <name>plane_filter</name>
   <version>0.0.0</version>
   <description>The sac_segmentation_filter package</description>
 

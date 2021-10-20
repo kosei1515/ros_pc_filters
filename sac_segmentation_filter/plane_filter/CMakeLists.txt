@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(sac_segmentation_filter)
+project(plane_filter)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -124,7 +124,7 @@ include_directories(
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME}
-  src/sac_segmentation_filter.cpp
+  src/plane_filter.cpp
 )
 
 ## Add cmake target dependencies of the library
@@ -135,7 +135,7 @@ add_library(${PROJECT_NAME}
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(${PROJECT_NAME}_node src/main.cpp src/sac_segmentation_filter.cpp)
+add_executable(${PROJECT_NAME}_node src/main.cpp src/plane_filter.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
