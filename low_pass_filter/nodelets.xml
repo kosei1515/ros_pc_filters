@@ -1,0 +1,8 @@
+<library path="lib/liblow_pass_filter">
+  <class name="pointcloud_preprocessor/LowPassFilter"
+     type="pointcloud_preprocessor::LowPassFilter"
+     base_class_type="nodelet::Nodelet">
+    <description>
+    </description>
+  </class>
+</library>

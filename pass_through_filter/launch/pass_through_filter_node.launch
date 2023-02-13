@@ -1,0 +1,26 @@
+<launch>
+  <!-- <node pkg="nodelet" type="nodelet" name="pcl_manager" args="manager" output="screen" /> -->
+  <arg name = "input" default = "input"/>
+  <arg name = "output" default = "output"/>
+  <arg name = "nodelet_manager_name"          default = "manager"/>
+  <!-- Run a passthrough filter to clean NaNs -->
+  <node pkg="nodelet" type="nodelet" name="passthroughfilter_x" args="load pcl/PassThrough $(arg nodelet_manager_name)" output="screen">
+    <remap from="~input" to="$(arg input)" />
+    <rosparam>
+      filter_field_name: x
+      filter_limit_min: -1.5
+      filter_limit_max: 1.5
+      filter_limit_negative: False
+    </rosparam>
+  </node>
+  <node pkg="nodelet" type="nodelet" name="passthroughfilter_y" args="load pcl/PassThrough $(arg nodelet_manager_name)" output="screen">
+    <remap from="~input" to="passthroughfilter_x/output" />
+    <remap from="~output" to="$(arg output)"/>
+    <rosparam>
+      filter_field_name: y
+      filter_limit_min: -1.5
+      filter_limit_max: 1.5
+      filter_limit_negative: False
+    </rosparam>
+  </node>
+</launch>

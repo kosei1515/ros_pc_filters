@@ -1,0 +1,17 @@
+<library path="lib/libmedian_filter">
+  <class name="pointcloud_preprocessor/MedianFilter"
+     type="pointcloud_preprocessor::MedianFilter"
+     base_class_type="nodelet::Nodelet">
+    <description>
+    </description>
+  </class>
+</library>
+
+<library path="lib/libstereo_median_filter">
+  <class name="stereo_pointcloud_preprocessor/MedianFilter"
+     type="stereo_pointcloud_preprocessor::MedianFilter"
+     base_class_type="nodelet::Nodelet">
+    <description>
+    </description>
+  </class>
+</library>

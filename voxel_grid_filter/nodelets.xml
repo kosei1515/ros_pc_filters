@@ -1,0 +1,8 @@
+<library path="lib/libvoxel_grid_filter">
+  <class name="pointcloud_preprocessor/VoxelGridFilter"
+     type="pointcloud_preprocessor::VoxelGridFilter"
+     base_class_type="nodelet::Nodelet">
+    <description>
+    </description>
+  </class>
+</library>
